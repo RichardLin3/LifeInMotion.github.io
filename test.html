@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="w3schools.css">
+    <link rel="stylesheet" type="text/css" href="pictures.css">
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<style>
+.picture {display:none;}
+</style>
+<body>
+
+<nav class="w3-sidenav w3-light-grey w3-card-2" style="width:130px">
+  <div class="w3-container">
+    <h5>Location</h5>
+  </div>
+  <a href="#" class="tablink" onclick="openPhotoTab(event, 'South Africa')">South Africa</a>
+  <a href="#" class="tablink" onclick="openPhotoTab(event, 'Japan')">Japan</a>
+</nav>
+
+<div style="margin-left:130px">
+  <div class="w3-padding">Vertical Tab Example (sidenav)</div>
+
+  <div id="South Africa" class="w3-container picture">
+    <h2>South Africa</h2>
+          <a class="fancybox" rel="homeGroupPics" title="City 1" href="https://lh4.googleusercontent.com/-WUkY0fcO6yY/V5amBDFfALI/AAAAAAAAASg/h1BDa5BcnDg7O3GGq9Pe44vRczv_4lrhQCL0B/w634-h357-no/CapeTown01.jpg"><img src="https://lh4.googleusercontent.com/-PyLUXaR-goE/V5amBDqyYqI/AAAAAAAAASg/YF_v5AUHXZ0xFrr0TLGxOBWNWChnziL-QCL0B/w500-h281-no/CapeTown01_thumbnail.jpg" alt="City1 View" /></a>
+          <a class="fancybox" rel="homeGroupPics" title="City 2" href="https://lh4.googleusercontent.com/-lLsfZLg2Gt4/V5amBCHIZXI/AAAAAAAAASg/eJxAsJBaJhw5yvQCYwr_VXVn97UJO96vwCL0B/w634-h357-no/CapeTown02.jpg"><img src="https://lh4.googleusercontent.com/-GtPa1owB3aM/V5amCI0lmFI/AAAAAAAAASg/BxiRxfklOpQ97maAI7bKg2VcVHtVapGVACL0B/w500-h281-no/CapeTown02_thumbnail.jpg" alt="City2 View" /></a>  
+          <a class="fancybox" rel="homeGroupPics" title="City 3" href="https://lh4.googleusercontent.com/-i8NCfkDYU84/V5amCKLPukI/AAAAAAAAASg/4t4LH9CbNU4i2dFvAXyuNaGWtNhwiCO7ACL0B/w634-h357-no/CapeTown03.jpg"><img src="https://lh4.googleusercontent.com/-5JicHAvUG48/V5amCJrtNwI/AAAAAAAAASg/tpNLvewmBk4TrAxqXfcfdkNVCIavfLPZgCL0B/w500-h281-no/CapeTown03_thumbnail.jpg" alt="City3 View" /></a>  
+          <a class="fancybox" rel="homeGroupPics" title="City 4" href="https://lh4.googleusercontent.com/-qs1r2kTKsUg/V5amCYZmcNI/AAAAAAAAASg/W-L5qetN6003yoFIB8qcCnVNDvlqunPTgCL0B/w634-h357-no/CapeTown04.jpg"><img src="https://lh4.googleusercontent.com/-BvVJxeZ-X0w/V5amCSTQHzI/AAAAAAAAASg/v4OxRb5UDe4IubNJdLrevh204EUsoIOhgCL0B/w500-h281-no/CapeTown04_thumbnail.jpg" alt="City4 View" /></a>  
+          <a class="fancybox" rel="homeGroupPics" title="City 5" href="https://lh4.googleusercontent.com/-_NTHeIUWjOE/V5amCnRKpaI/AAAAAAAAASg/lcKfmJKi73gty4swWXluU00YL0_F4SciQCL0B/w634-h357-no/CapeTown05.jpg"><img src="https://lh4.googleusercontent.com/-ruy7yWLOpKQ/V5amCqBhrII/AAAAAAAAASg/sXVYz6hBpwQVts7GvQelWAKDiTEiV2gEwCL0B/w500-h281-no/CapeTown05_thumbnail.jpg" alt="City5 View" /></a>  
+          <a class="fancybox" rel="homeGroupPics" title="City 6" href="https://lh4.googleusercontent.com/-6NnUDOCKsk0/V5amCuTQjKI/AAAAAAAAASg/VNfCRkkF1p03co0cA4wm-qxcZMOVeq0nQCL0B/w634-h357-no/CapeTown06.jpg"><img src="https://lh4.googleusercontent.com/-ntSYFRPpmEU/V5amC-RXicI/AAAAAAAAASg/cuScRNn0iuE8bJCCO0FZXsx74BEwo4IdwCL0B/w500-h281-no/CapeTown06_thumbnail.jpg" alt="City6 View" /></a>
+          <a class="fancybox" rel="homeGroupPics" title="City 7" href="https://lh4.googleusercontent.com/-gCVk5J3sqbc/V5amC_xjS_I/AAAAAAAAASg/2otmbu23kzgAJhjBlfdoRdXa_UresrDJgCL0B/w634-h357-no/CapeTown07.jpg"><img src="https://lh4.googleusercontent.com/-dQkBu_SFOfs/V5amC7wqcxI/AAAAAAAAASg/19TwQuV7JkoM3fNoUa7DlP4s8afbTU91ACL0B/w500-h281-no/CapeTown07_thumbnail.jpg" alt="City7 View" /></a> 
+          <a class="fancybox" rel="homeGroupPics" title="City 8" href="https://lh4.googleusercontent.com/-N9NLVr8c1OA/V5amDO6rcmI/AAAAAAAAASg/O0iTPu5HUyok7vqstsvUP2qjBfyyHppbgCL0B/w634-h357-no/CapeTown08.jpg"><img src="https://lh4.googleusercontent.com/-pEuaIrF2q9I/V5amDEMtMdI/AAAAAAAAASg/9t4dneS_7yYssj1hirO1stH-f5mpRHu3wCL0B/w500-h281-no/CapeTown08_thumbnail.jpg" alt="City8 View" /></a>  
+
+  </div>
+  <div id="Japan" class="w3-container picture">
+    <h2>Japan</h2>
+    <p>Paris is the capital of France.</p>
+    <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+  </div>
+</div>
+
+<script>
+function openPhotoTab(evt, pictureName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("picture");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(pictureName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+$(document).ready(function() {
+        $(".fancybox").fancybox();
+      });
+
+      $(document).ready(function() {
+        $('.fancybox-media').fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+        helpers : {
+          media : {}
+          }
+        });
+      });
+
+      $(document).ready(function() {
+        $(".various").fancybox({
+          maxWidth  : 800,
+          maxHeight : 600,
+          fitToView : false,
+          width   : '80%',
+          height    : '80%',
+          autoSize  : false,
+          closeClick  : false,
+          openEffect  : 'none',
+          closeEffect : 'none'
+        });
+      });
+</script>
+
+</body>
+</html>
+

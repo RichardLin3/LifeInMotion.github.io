@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Videos</title>
+
+		<!-- Loading CSS Files -->
+		<link rel="stylesheet" type="text/css" href="videos.css">
+		<link rel="stylesheet" type="text/css" href="w3schools.css">
+
+		<!-- Add jQuery library -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+		<link rel="stylesheet" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox").fancybox();
+			});
+
+			$(document).ready(function() {
+				$('.fancybox-media').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+				helpers : {
+					media : {}
+					}
+				});
+			});
+
+			$(document).ready(function() {
+				$(".various").fancybox({
+					maxWidth	: 800,
+					maxHeight	: 600,
+					fitToView	: false,
+					width		: '80%',
+					height		: '80%',
+					autoSize	: false,
+					closeClick	: false,
+					openEffect	: 'none',
+					closeEffect	: 'none'
+				});
+			});
+
+			function openTab(evt, vidType) {
+				var i, x, tablinks;
+				x = document.getElementsByClassName("video");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablink");
+				for (i = 0; i < x.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+				}
+				document.getElementById(vidType).style.display = "block";
+					evt.currentTarget.firstElementChild.className += " w3-border-red";
+				}
+			</script>
+	</head>
+
+	<body>
+		<!-- Nav Bar -->
+		<ul class="navBar">
+
+			<!-- Logo -->
+			<div class="logo">
+				<a href="index.html">LifeInMotion</a>
+			</div>
+			<!-- End Logo -->
+
+			<li><a href="about.html">About</a></li>
+			<li><a href="videos.html">Videos</a></li>
+			<li><a href="pictures.html">Pictures</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<!-- End Nav Bar -->
+
+		<!-- Videos Header -->
+		<div class="videoHeader">
+			<h2>videos</h2>
+			<h1>| Building A Creative Life</h1><br>
+		</div>
+		<!-- End Videos Header -->
+
+		<!-- Videos Banner -->
+		<img class="videoBanner" src="https://lh6.googleusercontent.com/-AYTKf9ct-o8/V4aO0SdilBI/AAAAAAAAANc/myZz5ZedmMkAIAtHiZPEGW_tDyIKKsodACL0B/w2717-h537-no/fakebanner.jpg	">
+		<!-- End Videos Banner -->
+		
+		<div align="center" class="videoNew">
+			<h1>Our Newest Creation</h1>
+			<a class="various" data-fancybox-type="iframe" href="https://www.youtube.com/embed/gcQlglqmuSg?autoplay=1">
+				<img src="https://lh4.googleusercontent.com/-uy_5C-rddH0/V4aOz_WewXI/AAAAAAAAANU/Iw3CE2XW6LAhxSz5Bjcy0cn6_AMa5HzogCL0B/w2717-h1323-no/ReflectionsEdited.jpg" width="40%">
+			</a>
+		</div> 
+
+		<h2 align="center" style="padding-top: 1%;"> Check Out More Videos Below!</h2>
+		<div class="youtubeLink">
+			<a href="https://www.youtube.com/channel/UCNb6l0mwnIcHjqMLmisnKEw"><p align="center">Check us out on YouTube</p></a>
+		</div>
+		<div class="tabContainer">
+			<div class="w3-row">
+				<a onclick="openTab(event, 'Stories');">
+					<div align="center" class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Stories</div>
+				</a>
+				<a onclick="openTab(event, 'Artists');">
+					<div align="center" class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Artists</div>
+				</a>
+				<a onclick="openTab(event, 'BTS');">
+					<div align="center" class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">BTS</div>
+				</a>
+			</div>
+
+			<div id="Stories" class="w3-container video" style="display: inline-block;">
+				<a class="various" data-fancybox-type="iframe" href="https://www.youtube.com/embed/v9O7SDu4SCU?autoplay=1"><img src="https://lh5.googleusercontent.com/-i6NzBtmTQCM/V4aOwdf0AUI/AAAAAAAAANU/UNgWYqL4rx4Y_vb3lv3S7oZpNUPxFuHGQCL0B/w2717-h1274-no/ChanceOfRainEdited.jpg" width="29%" /></a>
+
+				<a class="various" data-fancybox-type="iframe" href="https://www.youtube.com/embed/gcQlglqmuSg?autoplay=1"><img src="https://lh4.googleusercontent.com/-uy_5C-rddH0/V4aOz_WewXI/AAAAAAAAANU/Iw3CE2XW6LAhxSz5Bjcy0cn6_AMa5HzogCL0B/w2717-h1323-no/ReflectionsEdited.jpg" width="29%" /></a>
+			</div>
+
+			<div id="Artists" class="w3-container video">
+				<a class="various" data-fancybox-type="iframe" href="https://www.youtube.com/embed/bVwbmDM4I-8?autoplay=1"><img src="https://lh3.googleusercontent.com/-8FSO_-QdtJU/V4aOyV6SS8I/AAAAAAAAANU/dgiUk_kj1uYE0-gmgy1Xl47wq_rXWICAQCL0B/w2717-h1272-no/CindyYShawEdited.jpg" width="29%" /></a>
+			</div>
+
+			<div id="BTS" class="w3-container video">
+				<h2>Tokyo</h2>
+				<p>Tokyo is the capital of Japan.</p>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div class="footer">
+			<div align="center" class="footerLinks">
+				<li><a href="index.html">Home</a>
+				<li><a href="about.html">About</a></li>
+				<li><a href="videos.html">Videos</a></li>
+				<li><a href="pictures.html">Pictures</a></li>
+				<li><a href="contact.html">Contact</a></li><br>
+				Copyright &copy; LifeInMotion 2016
+			</div>
+		</div>
+		<!-- End Footer -->
+	</body>
+</html>
+

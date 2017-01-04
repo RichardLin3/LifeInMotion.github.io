@@ -1,0 +1,141 @@
+@font-face {
+	font-family: RalewayThin;
+	src: url('Raleway-Regular.ttf');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: RalewayThin, "Helvetica", sans-serif;
+}
+
+.navBar {
+	background-color: #ffffff;
+	color: #000000;
+	list-style: none;
+	text-align: right;
+	position: fixed;
+	width: 100%;
+	padding: 1%;
+	margin-top: 0px;
+}
+
+.navBar li {
+	display: inline-block;
+	padding-right: 2%;
+	font-size: 16px;
+}
+
+.navBar li a {
+	text-decoration: none;
+	color: #666666;
+}
+
+.navBar li a:hover {
+	color: #000000;
+}
+
+.logo {
+	color: #000000;
+	float: left;
+	padding-left: 2%;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.logo a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.banner {
+	padding-top: 2%;
+	width: 100%;
+	display: block;
+}
+
+.banner .banner-image {
+	width: 100%;
+	height: 50%;
+}
+
+.about {
+	padding: 1%;
+}
+
+.about .aboutText {
+	color: #8c8c8c;
+}
+
+.about h4 {
+	font-size: 20px;
+	display: block;
+}
+
+.about .aboutVideo {
+	padding-bottom: 1%;
+}
+
+.videoSection {
+	padding: 1% 10% 1% 10%;
+	background-color: #f2f2f2;
+}
+
+.videoSection .videos {
+	align-items: center;
+}
+
+.videoSection .videos iframe {
+	border: 10px solid white;
+	border-radius: 20px;
+}
+
+.videoSection .videos a {
+	text-decoration: none;
+	color: #000000;
+	padding: 2% 0 2% 0;
+}
+
+.videoSection a:hover {
+	color: #c1c1c1;
+	font-weight: bold;
+}
+
+.divider {
+	background-color: : #f2f2f2;
+	color: #8c8c8c;
+	padding: 1%;
+}
+
+.pictureSection {
+	padding-bottom: 1%;
+}
+
+.pictureSection .fancybox img{
+	width: 30%;
+}
+
+.footer {
+	padding: .5%;
+	background-color: gray;
+}
+
+
+.footer .footerLinks {
+	list-style: none;
+}
+
+.footer .footerLinks li {
+	display: inline-block;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-right: 2%;
+}
+.footer .footerLinks a {
+	text-decoration: none;
+	color: white;
+}
+
+.footer .footerLinks a:hover {
+	color: black;
+}

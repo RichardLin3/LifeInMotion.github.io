@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Life In Motion</title>
+
+		<!-- Loading CSS Files -->
+		<link rel="stylesheet" type="text/css" href="index.css">
+
+
+		<!-- Add jQuery library -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+		<link rel="stylesheet" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox").fancybox();
+			});
+
+			$(document).ready(function() {
+				$('.fancybox-media').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+				helpers : {
+					media : {}
+					}
+				});
+			});
+
+			$(document).ready(function() {
+				$(".various").fancybox({
+					maxWidth	: 800,
+					maxHeight	: 600,
+					fitToView	: false,
+					width		: '80%',
+					height		: '80%',
+					autoSize	: false,
+					closeClick	: false,
+					openEffect	: 'none',
+					closeEffect	: 'none'
+				});
+			});
+
+		</script>
+	</head>
+		
+	<body>
+		<!-- Nav Bar -->
+		<ul class="navBar">
+
+			<!-- Logo -->
+			<div class="logo">
+				<a href="index.html">LifeInMotion</a>
+			</div>
+			<!-- End Logo -->
+
+			<li><a href="about.html">About</a></li>
+			<li><a href="videos.html">Videos</a></li>
+			<li><a href="pictures.html">Pictures</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<!-- End Nav Bar -->
+
+		<!-- Banner -->
+		<div class="banner">
+			<img class="banner-image" src="https://lh4.googleusercontent.com/-rh3Vkpv72ts/V4aOzvVnQJI/AAAAAAAAANU/yos1NiugXe0szUcsH7rDF9Ar4F9MxtyTQCL0B/w2717-h986-no/IMG_2038TemporaryNew1.jpg">
+		</div>
+		<!-- End Banner -->
+
+		<!-- Mission Statement -->
+		<div align="center" class="about">
+			<div class="aboutText">
+				<h1>Our Goal</h1>
+				<h4>To bring an imaginative craft form our lens to your lens.<br>
+				To marry style with simplicity.<br>
+				To elicit emotion through subtlety.<br>
+				To conceive a new artform.</h4>
+			</div>
+			<div id="aboutVideo">
+				<h1>Our Humble Beginnings</h1>
+				<a class="various fancybox fancybox.iframe" href="https://www.youtube.com/embed/7d0JSf5y7RE?autoplay=1">
+				<img src="https://lh3.googleusercontent.com/-B0AAWshgipA/V4aOvA0ZtNI/AAAAAAAAANU/r53QRH1ZaHY0jWUwbpJ9kfheyTHur3QggCL0B/w2715-h1326-no/AboutThumbnailEdited.jpg" width="50%">
+				</a>
+			</div>
+		</div>
+		<!-- End Mission Statement -->
+
+		<!-- Video Display -->
+		<div align="center" class="videoSection">
+			<div class="videos">
+				<h1>Watch</h1>
+
+				<a class="various" rel="homeGroupVids" data-fancybox-type="iframe" href="https://www.youtube.com/embed/v9O7SDu4SCU?autoplay=1">
+					<img src="https://lh5.googleusercontent.com/-i6NzBtmTQCM/V4aOwdf0AUI/AAAAAAAAANU/UNgWYqL4rx4Y_vb3lv3S7oZpNUPxFuHGQCL0B/w2717-h1274-no/ChanceOfRainEdited.jpg" width="30%">
+				</a>
+
+				<a class="various" rel="homeGroupVids" data-fancybox-type="iframe" href="https://www.youtube.com/embed/bVwbmDM4I-8?autoplay=1">
+					<img src="https://lh3.googleusercontent.com/-8FSO_-QdtJU/V4aOyV6SS8I/AAAAAAAAANU/dgiUk_kj1uYE0-gmgy1Xl47wq_rXWICAQCL0B/w2717-h1272-no/CindyYShawEdited.jpg" width="30%">
+				</a>
+
+				<a class="various" rel="homeGroupVids" data-fancybox-type="iframe" href="https://www.youtube.com/embed/gcQlglqmuSg?autoplay=1">
+					<img src="https://lh4.googleusercontent.com/-uy_5C-rddH0/V4aOz_WewXI/AAAAAAAAANU/Iw3CE2XW6LAhxSz5Bjcy0cn6_AMa5HzogCL0B/w2717-h1323-no/ReflectionsEdited.jpg" width="29%">
+				</a>
+
+				<br><br>
+
+				<a href="https://www.youtube.com/channel/UCNb6l0mwnIcHjqMLmisnKEw">Check Out Our YouTube Channel</a>
+			</div>
+		</div>
+		<!-- End Video Display --> 
+
+		<!-- Divider -->
+		<div align="center" class="divider">
+			This is a divider for the videos and the pictures.
+		</div>
+		<!-- End Divider -->
+
+		<!-- Picture Display -->
+		<div align="center" class="pictureSection">
+			<h1>Gaze</h1>
+			<a class="fancybox" rel="homeGroup" title="City 1" href="https://lh6.googleusercontent.com/-WUkY0fcO6yY/V5amBDFfALI/AAAAAAAAASg/h1BDa5BcnDg7O3GGq9Pe44vRczv_4lrhQCL0B/w2561-h1441-no/CapeTown01.jpg"><img src="https://lh4.googleusercontent.com/-PyLUXaR-goE/V5amBDqyYqI/AAAAAAAAASg/YF_v5AUHXZ0xFrr0TLGxOBWNWChnziL-QCL0B/w500-h281-no/CapeTown01_thumbnail.jpg" alt="City1 View" /></a>
+			<a class="fancybox" rel="homeGroup" title="City 2" href="https://lh6.googleusercontent.com/-lLsfZLg2Gt4/V5amBCHIZXI/AAAAAAAAASg/eJxAsJBaJhw5yvQCYwr_VXVn97UJO96vwCL0B/w2561-h1441-no/CapeTown02.jpg"><img src="https://lh4.googleusercontent.com/-GtPa1owB3aM/V5amCI0lmFI/AAAAAAAAASg/BxiRxfklOpQ97maAI7bKg2VcVHtVapGVACL0B/w500-h281-no/CapeTown02_thumbnail.jpg" alt="City2 View" /></a>  
+			<a class="fancybox" rel="homeGroup" title="City 3" href="https://lh6.googleusercontent.com/-i8NCfkDYU84/V5amCKLPukI/AAAAAAAAASg/4t4LH9CbNU4i2dFvAXyuNaGWtNhwiCO7ACL0B/w2561-h1441-no/CapeTown03.jpg"><img src="https://lh4.googleusercontent.com/-5JicHAvUG48/V5amCJrtNwI/AAAAAAAAASg/tpNLvewmBk4TrAxqXfcfdkNVCIavfLPZgCL0B/w500-h281-no/CapeTown03_thumbnail.jpg" alt="City3 View" /></a>   
+			<a class="fancybox" rel="homeGroup" title="City 1" href="https://lh6.googleusercontent.com/-Kuu00ANpTiQ/V5e_dTFp_uI/AAAAAAAAAVw/zsZPeIx8SBwDd_ZwqXsg9xA3gI56PSMiACL0B/w2561-h1441-no/Japan04.jpg"><img src="https://lh5.googleusercontent.com/-0Y4kUKKZ9g8/V5e_duGPVSI/AAAAAAAAAVw/MV34cA1kraQLYtOpQVQzOXrXX0UbWT4RgCL0B/w875-h492-no/Japan04_Thumbnail.jpg" alt="City1 View" /></a>
+			<a class="fancybox" rel="homeGroup" title="City 1" href="https://lh6.googleusercontent.com/-BlEtmEvGZiM/V5e_d1awCjI/AAAAAAAAAVw/hEjVBgSsONgE6KZZoFxezWQFkNWBaJBoQCL0B/w2561-h1441-no/Japan05.jpg"><img src="https://lh3.googleusercontent.com/-LlmgVainvzY/V5e_d3NYCkI/AAAAAAAAAVw/2nkl4pMjXrQ62r6v6NFcXv8KerCwe4x-ACL0B/w875-h492-no/Japan05_Thumbnail.jpg" alt="City1 View" /></a>
+			<a class="fancybox" rel="homeGroup" title="City 1" href="https://lh4.googleusercontent.com/-5e6Yd3Qt2cU/V5e_eNUenaI/AAAAAAAAAVw/P0Os4NVTh5gR5hk6IqGK5VhUKh3m0Zf8ACL0B/w2561-h1441-no/Japan06.jpg"><img src="https://lh5.googleusercontent.com/--xljzl7MPPQ/V5e_eB_roRI/AAAAAAAAAVw/AtR51g2UNrMoHZIiry3DgjewehUTclkpwCL0B/w875-h492-no/Japan06_Thumbnail.jpg" alt="City1 View" /></a>	
+		</div>
+		<!-- End Picture Display -->
+
+		<!-- Footer -->
+		<div class="footer">
+			<div align="center" class="footerLinks">
+				<li><a href="index.html">Home</a>
+				<li><a href="about.html">About</a></li>
+				<li><a href="videos.html">Videos</a></li>
+				<li><a href="pictures.html">Pictures</a></li>
+				<li><a href="contact.html">Contact</a></li><br>
+				Copyright &copy; LifeInMotion 2016
+			</div>
+		</div>
+		<!-- End Footer -->
+	</body>
+</html>
+
